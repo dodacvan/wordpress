@@ -1,0 +1,407 @@
+*{
+	box-sizing: border-box;
+	border-radius: 0px !important;    
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+body, html{
+	height: 100%;
+	width: 100%;
+}
+
+header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 128px;
+	width: 100%;
+    z-index: 9999;
+    background: #fff;
+    /*opacity: .9*/
+}
+
+header .nav{
+	text-align: right;
+}
+
+header ul li{
+	display: inline-block;
+}
+
+header .container,
+header .row,
+header .row>div{
+	height: 100%;
+}
+
+header .logo,
+header .nav{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+header .nav>div{
+	width: 100%;
+}
+
+header a{
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #046ba5 !important;
+}
+
+header .languages a{
+	font-size: 12px;
+}
+
+header .menu ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+header .menu a{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+header>.hr,
+footer>.hr{
+	height: 1px;
+	background: #ccc;
+	background: linear-gradient(to right, transparent , #ccc, transparent);
+}
+
+/*header .menu li:last-child{
+	padding-right: 0px;
+}
+
+header .menu li:first-child{
+	padding-left: 0px;
+}*/
+
+.languages ul{
+	margin: 0px;
+	padding: 0px 10px 0px 0px;
+}
+
+.languages li{
+	padding: calc(1em - 3px) 10px 1em 10px;
+}
+
+.languages+hr{
+	border: none;
+	height: 3px; 
+	background: linear-gradient(to right, #046ba5 , #469a66);
+	margin: 0px
+}
+
+.menu{
+	margin-top: -2px;
+	position: relative;
+}
+
+.menu li{
+	padding: 1em 20px calc(1em - 3px) 20px;
+}
+
+.menu li.active,
+.menu li:hover{
+	border-bottom: 3px solid #469a66;
+}
+
+/*.languages li.active,
+.languages li:hover{
+	border-top: 3px solid #469a66;
+}*/
+
+.menu li.active a,
+.menu li:hover a,
+.languages li.active a,
+.languages li:hover a{
+	color: #469a66 !important;
+}
+
+.menu li:hover a,
+.languages li:hover a{
+	opacity: .5;
+}
+
+#slider{
+	margin-top: 128px
+}
+
+#product .p-img{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+	position: relative;
+}
+
+#product .p-img>.note{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.6);
+	display: none;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+
+#product .p-img>.note>div{
+	padding: 0px 20px;
+	text-align: center;
+	font-size: 16px;
+	text-shadow: 0px 1px 3px #333;
+}
+
+#product .p-img>img{
+	visibility: hidden;
+	width: 100%;
+}
+
+#product .p-img+h3{
+	text-align: center;
+}
+
+#product .p-img+h3>a{
+	color: #23527c !important;
+	font-size: 18px;
+}
+
+#product .p-img+h3>a:hover{
+	color: #469a66 !important;
+	opacity: .5;
+}
+
+section>h1{
+	text-align: center;
+	font-size: 40px;
+	padding: 10px 0px;
+    /*margin-bottom: 0px;*/
+	color: #fff;
+	background: linear-gradient(to right, transparent, #046ba5 , #469a66, transparent);
+}
+
+section>h1+hr{
+	margin: 0px 0px 20px 0px;
+    padding: 0px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #046ba5 , #469a66, transparent);
+    display: none;
+}
+
+section{
+	margin-top: 50px;
+}
+
+footer h4{
+	line-height: 2;
+	text-align: center;
+	margin: 0px;
+}
+
+footer>.hr{
+	margin-bottom: 24px;
+}
+
+
+footer{
+	color: #999;
+	margin-bottom: 24px;
+}
+
+#contact textarea{
+	resize: none;
+}
+
+#contact{
+	margin-bottom: 50px;
+}
+
+#contact p{
+	margin: 0px;
+}
+
+.c_logo{
+	width: 100%;
+}
+
+#link ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 20px 0px 0px 0px; 
+	max-width: 100%;
+	overflow: auto;
+	white-space:nowrap;
+	text-align: center;
+}
+
+#link ul li{
+	display: inline-block;
+	height: 28px;
+	margin-left: 10px;
+	padding: 0px !important;
+}
+
+#link ul li img{
+	height: 100%;
+}
+
+#mainCarousel{
+	margin-left: -10%;
+	margin-right: -10%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#mainCarousel .carousel-inner>.item{
+    background-repeat: no-repeat;
+    background-position: center center;
+ 	background-attachment: fixed;
+    background-size: cover;
+}
+
+#mainCarousel .carousel-inner>.item>img{
+	width: 100%;
+	height: auto;
+	visibility: hidden;
+}
+
+.gradient-panel .left,
+.gradient-panel .right{
+	height: 100%;
+	width: 30%;
+	top: 0px;
+    position: absolute;
+    z-index: 999;
+    background: #fff;
+}
+
+div.gradient-panel .left{
+	left: 0px;
+	background: linear-gradient(to right, white, transparent);;
+}
+
+div.gradient-panel .right{
+	right: 0px;
+	background: linear-gradient(to left, white, transparent);;
+}
+
+.carousel-control{
+	z-index: 1000;
+}
+
+.carousel-control.left,
+.carousel-control.right{
+	background: none;
+}
+
+/*.carousel-indicators{
+	width: 100%;
+    left: 0px;
+    bottom: 0px;
+    margin: 0px;
+    z-index: 1000;
+}
+
+.carousel-indicators li{
+	width: 33% !important;
+	height: 1px !important;
+	margin: 0px;
+	border: none;
+	background-color: #046ba5 !important
+}
+
+.carousel-indicators li.active{
+	height: 3px !important;
+}*/
+
+.indicators{
+
+}
+
+.indicators ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+.indicators ul li{
+	display: inline-block;
+	height: 3px;
+	background: #ccc;
+	background: linear-gradient(to right, transparent, #ccc , transparent);
+	width: 33%;
+	cursor: pointer !important;
+}
+
+.indicators ul li.active{
+	background: #046ba5;
+	background: linear-gradient(to right, transparent, #046ba5 , transparent);
+}
+
+#company_info ul li{
+	font-size: 16px;
+	padding: 5px 0px;
+	letter-spacing: 1px;
+}
+
+#contact input,
+#contact textarea{
+	border: none;
+	box-shadow: none;
+	margin-top: 5px;
+}
+
+#contact input+hr,
+#contact textarea+hr{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	height: 3px;
+	background: linear-gradient(to right, #ccc , transparent);
+	margin-bottom: 10px;
+}
+
+#contact input:hover+hr,
+#contact textarea:hover+hr{
+	background: linear-gradient(to right, #046ba5 , #469a66, transparent);
+}
+
+#contact input:focus+hr,
+#contact textarea:focus+hr{
+	background: linear-gradient(to right, #046ba5 , #469a66);
+}
+
+#contact button{
+	width: 192px;
+	height: 48px;
+	border: none;
+	border-bottom: 3px solid #ccc;
+	box-shadow: none;
+	outline-color: transparent;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+#contact button:hover{
+	background-color: #fff;
+	border-color: #046ba5;
+}
+
+.nav_indicator{
+	position: absolute;
+	height: 3px;
+	width: 100px;
+	background-color: #469a66;
+	bottom: 0px;
+}
